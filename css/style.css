@@ -56,6 +56,7 @@ body {
     margin-right: 15px;
     padding: 15px;
     border-radius: 9px;
+    border: 5px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
@@ -104,5 +105,57 @@ body {
     border: none;
     font-size: 20px;
     padding: 0px 50px;
+  }
+  .selecionado  {
+    border: 5px solid rgba(50, 183, 47, 1);
+  }
+  .itensSelecionados {
+    background-color: rgba(50, 183, 47, 1);
+  }
+  .confirmar  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(238, 238, 238, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 370px;
+    height: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(80, 208, 116, 1);
+    color: white;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+  }
+  .pedido h1, .pedido p, .pedido a, .pedido button {
+    font-size: 22px;
+  }
+  .total, .pedido h1, .pedido a, .pedido button{
+    font-weight: bold;
+  }
+  .pedido a {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 100px;
+    color: rgba(80, 208, 116, 1);
+    text-decoration: none;
+    padding: 10px 40px;
+  }
+  .pedido button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+  .escondido {
+    display: none;
   }
 }
