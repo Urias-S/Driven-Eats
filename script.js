@@ -87,7 +87,6 @@ function pedir (){
    - Bebida: ${pedidoBebida}
    - Sobremesa: ${pedidoSobremesa}
 Total: ${total.toFixed(2)}`;
-  console.log(encodeURIComponent(mensagem));
    let link = document.querySelector(".pedido a");
   link.href = `https://wa.me/5511960386578?text=${encodeURIComponent(mensagem)}`;
    
