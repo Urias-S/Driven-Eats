@@ -16,42 +16,42 @@
     <section class="pratos">
       <h1>Primeiro, seu prato</h1>
       <div class="opcoes">
-        <div class="opcao ">
+        <div class="opcao" onclick="selecionarPrato(this)">
           <img src="images/pf_calabresa.png" >
           <h1>Calabresa</h1>
           <p>Arroz, feijão, calabresa acebolada e fritas</p>
           <h2>18.90</h2>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="selecionarPrato(this)">
           <img src="images/pf_carne.jpg" >
           <h1>Carne</h1>
           <p>Arroz, feijão, alcatra, salada e fritas</p>
           <h2>24.90</h2>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="selecionarPrato(this)">
           <img src="images/pf_frango.jpg" >
           <h1>Frango</h1>
           <p>Arroz, feijão, filé de frango grelhado e salada</p>
-          <h2>18.90</h2>
+          <h2>15.60</h2>
         </div>
       </div>
     </section>
     <section class="bebidas">
       <h1>Agora, sua bebida</h1>
       <div class="opcoes">
-        <div class="opcao">
+        <div class="opcao" onclick="selecionarBebida(this)">
           <img src="images/coca.png" >
           <h1>Coca-cola</h1>
           <p>Lata 350ml</p>
           <h2>6.00</h2>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="selecionarBebida(this)">
           <img src="images/fanta.png" >
           <h1>Fanta</h1>
           <p>Lata 350ml</p>
-          <h2>6.00</h2>
+          <h2>4.00</h2>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="selecionarBebida(this)">
           <img src="images/suco.png" >
           <h1>Suco de Laranja</h1>
           <p>Lata 350ml</p>
@@ -62,19 +62,19 @@
     <section class="sobremesas">
       <h1>Por fim, sua sobremesa</h1>
       <div class="opcoes">
-        <div class="opcao">
+        <div class="opcao" onclick="selecionarSobremesa(this)">
           <img src="images/brownie.jpg" >
           <h1>Brownie</h1>
           <p>Brownie de chocolate</p>
-          <h2>6.00</h2>
+          <h2>10.00</h2>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="selecionarSobremesa(this)">
           <img src="images/mouse.jpg" >
           <h1>Mousse</h1>
           <p>Mousse de maracujá</p>
-          <h2>6.00</h2>
+          <h2>8.00</h2>
         </div>
-        <div class="opcao">
+        <div class="opcao" onclick="selecionarSobremesa(this)">
           <img src="images/pudim.jpg" >
           <h1>Pudim</h1>
           <p>Pudim de leite condensado</p>
@@ -85,17 +85,17 @@
     <div class="confirmar escondido">
       <div class="pedido">
         <h1>Confirme seu pedido</h1>
-        <p class="prato">Frango Yin Yang: 14.90</p>
-        <p class="bebida">Coquinha gelada: 4.90</p>
-        <p class="sobremesa">Pudim: 7.90</p>
-        <p class="total">TOTAL: 27.70</p>
-        <a href="">Tudo certo, pode pedir!</a>
-        <button>Cancelar</button>
+        <p class="prato"></p>
+        <p class="bebida"></p>
+        <p class="sobremesa"></p>
+        <p class="total"></p>
+        <a onclick="pedir()">Tudo certo, pode pedir!</a>
+        <button onclick="cancelar()">Cancelar</button>
       </div>
     </div>
   </div>
   <footer>
-    <button>Selecione os 3 itens para fechar o pedido</button>
+    <button class = "botaoPedido" onclick="fecharPedido(this)">Selecione os 3 itens para fechar o pedido</button>
   </footer>
 <script src = "script.js"></script>
 </body>
